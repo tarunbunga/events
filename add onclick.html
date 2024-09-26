@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-image: url("image.jpg");
+        background-position: center;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="firstp" onclick="changetext()">TARUN BUNGA</p>
+    <script>
+        function changetext(){
+            var fisrtp=document.getElementById("firstp");
+            fisrtp.innerHTML="S/O RAJU BUNGA";
+        }
+    </script>
+</body>
+</html> 

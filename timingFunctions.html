@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="spnCounter"></span>
+    <script>
+        var counter=10;
+        var counterHandler=setInterval(changeCounter,1000);
+        function changeCounter(){
+            document.getElementById("spnCounter").innerHTML=String(counter);
+            counter--;
+            if(counter==0){
+                clearInterval(counterHandler);
+            }
+
+        }
+    </script>
+</body>
+</html>
